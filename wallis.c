@@ -6,12 +6,14 @@
 float wallis_pi(int a)
  {	float pi;
  	float prd=1;
- 	for(int i=1; i<=a; i++){
+ 	for(int i=1; i<=a; i++)
+        {
  	float num = (4.0*i*i)/((4.0*i*i)-1);
  	prd= prd*num;
  	}
  	pi= 2*prd;
  	return pi;
+}
 Or
 float wallis_pi(int a) 
 {
